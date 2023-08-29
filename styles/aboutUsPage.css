@@ -296,7 +296,7 @@ img.footer-logo {
 }
 
 .footer-bg {
-    background-image: url("/images/footer.png");
+    background-image: url("../images/footer.png");
     background-position: center;
     background-size: cover;
     width: 100%;

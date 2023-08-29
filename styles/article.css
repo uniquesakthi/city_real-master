@@ -21,6 +21,15 @@ html {
     border-radius: 2rem;
 }
 
+.article-bg:hover{
+    transform: scale(1.07);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .cards:hover{
+
+  }
+  
 .j-content{
     justify-content: end;
 }
@@ -57,7 +66,14 @@ h4.dubai {
 
 img.dubai-img {
     border-radius: 20px 20px 0px 0px;
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
 }
+  
+  img.dubai-img:hover{
+    transform: scale(1.1, 1.1);
+  }
+  
 
 .cards {
     width: 350px;
@@ -119,7 +135,7 @@ img.footer-logo {
 }
 
 .footer-bg {
-    background-image: url("/images/footer.png");
+    background-image: url("../images/footer.png");
     background-position: center;
     background-size: cover;
     width: 100%;

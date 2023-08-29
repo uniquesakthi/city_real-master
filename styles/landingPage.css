@@ -1,350 +1,553 @@
-
-
-*{
-    margin:0px;
-    font-family: 'Poppins', Arial, sans-serif;
+* {
+    margin: 0px;
+    /* font-family: 'Poppins', Arial, sans-serif; */
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 
-
-
-
-#header{
-    width:100%;
-     background-image:url("../images/headerBg1.svg");
-     background-size:cover ;
-     height:90vh;
-     /* animation:changingBG 9s ease-in-out infinite ; */
-     display: flex;
-     align-items: center;
-     background-position: center;
+.text-align-center {
+    text-align: center;
 }
+
+.text-align-end{
+    text-align: end;
+}
+
+.order1{
+    order: 1;
+}
+
+.order2{
+    order: 2;
+}
+
+.carousel-captions {
+    position: absolute;
+    right: 14%;
+    bottom: 18rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    /* text-align: right; */
+}
+
+
+/* #header {
+    width: 100%;
+    background-image: url("../images/qatarbg.svg");
+    background-size: cover;
+    height: 800px;
+    animation:changingBG 9s ease-in-out infinite ;
+    display: flex;
+    align-items: center;
+    background-position: center;
+} */
+
 /* #header {
     width: 100%;
     height:90vh;
     overflow: hidden;
     position: relative;
 } */
-#header #bgImg{
+#header #bgImg {
     width: 70%;
     height: 300px;
     justify-content: space-evenly;
-   
+
     /* position: absolute;
     top: 25%;
     left: 10% */
 }
-#header #bgImg .top h1,#header #bgImg .top h3{
-    color:white;
-    font-family: 'Poppins', Arial, sans-serif;
-   
+
+#header #bgImg .top h1,
+#header #bgImg .top h3 {
+    color: white;
+    font-family: 'Poppins, Medium';
+
     /* font-family: */
 }
-#header #bgImg .top h1{
+
+#header #bgImg .top h1 {
     text-align: center;
     /* opacity: 0; */
-    font-size: 45px;
-    font-weight:700;
-    animation : slideRightIn 0.5s ease-in;
+    font-family: "Poppins, Medium";
+    font-size: 48px;
+    font-weight: 700;
+    animation: slideRightIn 0.5s ease-in;
     animation-delay: 1.1s;
+    line-height: 43px;
 }
-#header #bgImg .top h3{
-    font-size: 30px;
-    animation : slideLeftIn 0.5s ease-in;
-    animation-delay: 1.1s;
 
+#header #bgImg .top h3 {
+    font-size: 30px;
+    animation: slideLeftIn 0.5s ease-in;
+    animation-delay: 1.1s;
+    padding: 0px 0px 0px 16rem;
+    font-family: 'Poppins, Medium';
 }
-#header #bgImg .bottom h6{
-    color:white;
+
+#header #bgImg .bottom h6 {
+    color: white;
     font-weight: 700;
     font-size: 20px;
-    text-align: center; 
-    font-family: 'Poppins', Arial, sans-serif;
-   animation :changeOpacity 0.8s ease-in;
-   animation-delay:1.1s;
+    text-align: center;
+    font-family: "Poppins, Medium";
+    animation: changeOpacity 0.8s ease-in;
+    animation-delay: 1.1s;
+    padding: 0px 160px 0px 160px;
+    line-height: 37.5px;
 }
 
 
+p.l-about {
+    font-family: "Poppins, Medium";
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.our-team {
+    text-align: center;
+    font-family: "Poppins, Medium";
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 41.6px;
+    padding: 0px 140px;
+}
+
+p.welcome {
+    color: #FFF;
+    text-align: center;
+    font-family: "Poppins, Medium";
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0px 45px;
+    line-height: 36.6px;
+}
+
+
+.vision {
+    font-family: 'Poppins, Medium';
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.v-para {
+    font-family: 'Poppins, Medium';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36.6px;
+}
+
+.our-presence {
+    text-align: center;
+    font-family: 'Poppins, Medium';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.four-countries {
+    font-family: 'Poppins, Medium';
+    font-size: 36px;
+    font-weight: 700;
+}
 
 /* Qatar About Building Styles */
 
-#qatarAbout{
-    padding:30px 0;
-    width:100%;
+#qatarAbout {
+    padding: 70px 0;
+    width: 100%;
 }
-#qatarAbout .container{
-    width:70%;
+
+#qatarAbout .container {
+    width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin:20px 0;
+    margin: 20px 0;
 }
-#qatarAbout .bottom.container{
+
+#qatarAbout .bottom.container {
     flex-direction: row-reverse;
-}
-#qatarAbout .container .img-container{
-   position:relative;
-}
-#qatarAbout .container img{
-    height:300px;
-}
-#qatarAbout .container .text{
-    width:60%;
-    /* height:200px; */
-    align-items: start;
-}
-#qatarAbout .container .text h3,#qatarAbout .container .text p{
-    margin:15px;
-}
-#qatarAbout .container .text h3{
-    font-size: 30px;
-
+    margin-top: 4rem;
 }
 
-#qatarAbout .container .rectangle{
-   
-    width: 270px;
-    height: 270px;
+#qatarAbout .container .img-container {
+    position: relative;
+}
+
+#qatarAbout .container img {
+    width: 467px;
+    height: 479px;
+}
+
+#qatarAbout .container .text {
+    width: 47%;
+    /* height: 200px; */
+    align-items: self-start;
+}
+
+#qatarAbout .container .text h3,
+#qatarAbout .container .text p {
+    margin: 15px;
+}
+
+#qatarAbout .container .text h3 {
+    color: #000;
+    font-family: "Poppins, Medium";
+    font-size: 36px;
+    font-weight: 700;
+}
+
+p.landing-para {
+    color: #000;
+    font-family: "Poppins, Medium";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.6px;
+}
+
+#qatarAbout .container .rectangle {
     display: block;
+    width: 443px;
+    height: 391px;
     position: absolute;
     border-radius: 14px;
-  
     top: -7%;
-    z-index:-1;
+    z-index: -1;
 }
 
-#qatarAbout .top.container .rectangle{
+#qatarAbout .top.container .rectangle {
     background-color: #306F821A;
     left: -7%;
 }
-#qatarAbout .bottom.container .rectangle{
+
+#qatarAbout .bottom.container .rectangle {
     background-color: #FAAE5426;
     right: -7%;
 }
 
-#qatarAbout .top.container.addAnimation .img-container,#qatarAbout .bottom.container.addAnimation .text{
-    animation:slideLeft 0.5s ease-in-out;
+#qatarAbout .top.container.addAnimation .img-container,
+#qatarAbout .bottom.container.addAnimation .text {
+    animation: slideLeft 0.5s ease-in-out;
 }
-#qatarAbout .bottom.container.addAnimation .img-container,#qatarAbout .top.container.addAnimation .text{
-    animation:slideRight 0.5s ease-in-out;
+
+#qatarAbout .bottom.container.addAnimation .img-container,
+#qatarAbout .top.container.addAnimation .text {
+    animation: slideRight 0.5s ease-in-out;
 }
 
 /* About Section */
-#about{
-    background-image: url("../images/aboutBg.svg");
-    width:100%;
-    background-size:cover ;
-    height:90vh;
+#about {
+    background-image: linear-gradient(45deg, rgb(0 0 0 / 60%) 0%, rgb(80 79 79 / 60%) 89%),url(../images/aboutBg.svg);
+    width: 100%;
+    background-size: cover;
+    height: 810px;
     background-position: center;
 }
-#about .container{
-    width:70%;
-    color:white;
+
+#about .container {
+    width: 70%;
+    color: white;
 }
-#about .container a{
-    background-color:white;
-    color:black;
-    padding:10px;
+
+#about .container a {
+    background-color: white;
+    color: black;
+    padding: 5px 18px;
     border-radius: 20px;
+    text-align: center;
+    font-family: "Poppins, Medium";
+    font-size: 20px;
+    font-weight: 400;
 }
-#about .container a:hover{
-    background-color:black;
-    color:white;
+
+#about .container a:hover {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 18px;
+    font-family: "Poppins, Medium";
+    font-size: 20px;
     /* padding:20px; */
     transition: background-color 0.2s linear;
 }
-#about .container p,#about .container h2,#about .container p,#about .container a{
-    margin:20px 0;
-}
-#about.addAnimation .container p{
-    animation : slideDown 0.7s ease-in-out;
-}
-#about.addAnimation .container p.txt-center,#about.addAnimation .container h2,#about.addAnimation .container a{
 
-    animation : slideUp 0.7s ease-in-out;
+#about .container p,
+#about .container h2,
+#about .container p,
+#about .container a {
+    margin: 20px 0;
+}
+
+#about.addAnimation .container p {
+    animation: slideDown 0.7s ease-in-out;
+}
+
+#about.addAnimation .container p.txt-center,
+#about.addAnimation .container h2,
+#about.addAnimation .container a {
+
+    animation: slideUp 0.7s ease-in-out;
 }
 
 /* Countries Section */
 
-#countries .top p, #countries .top h3,#countries .buttons{
-    margin:20px 0;
+#countries .top p,
+#countries .top h3,
+#countries .buttons {
+    margin: 20px 0;
 }
-#countries .buttons .btn{
-    background:transparent;
-    border:none;
+
+#countries .buttons .btn {
+    background: transparent;
+    border: none;
     /* margin:10px; */
-    padding:10px;
+    padding: 5px 25px;
+    font-family: "Poppins, Medium";
+    font-size: 18px;
+    font-weight: 400;
 }
-#countries .buttons .btn.active{
-    background-color:#004AAD;
+
+#countries .buttons .btn.active {
+    background-color: #004AAD;
     border-radius: 20px;
-    color:white;
-    transition:background-color 0.1s linear,color 0.1s linear;
+    padding: 5px 25px;
+    font-family: "Poppins, Medium";
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    transition: background-color 0.1s linear, color 0.1s linear;
 }
-#countries .container{
-    display:none;
+
+#countries .container {
+    display: none;
 }
-#countries .container.active{
+
+#countries .container.active {
     display: flex;
 }
-#countries .container.qatar .top img{
-    height:450px;
-}
-#countries .container.qatar .top,#countries .container.qatar .bottom{
-    margin:10px 0;
-}
-#countries .container .imgContainer{
 
-    margin:10px;
+#countries .container.qatar .top img {
+    height: 450px;
 }
-#countries .container.qatar .bottom img{
-    height:200px;
-   
+
+#countries .container.qatar .top,
+#countries .container.qatar .bottom {
+    margin: 10px 0;
 }
+
+#countries .container .imgContainer {
+
+    margin: 10px;
+}
+
+#countries .container.qatar .bottom img {
+    height: 200px;
+
+}
+
+.social-media{
+    justify-content: end;
+ }
+
 #countries .container.dubai {
     flex-direction: row;
     flex-wrap: wrap;
 }
-#countries .container.dubai .top img{
-    height:330px;
-    margin:15px;
+
+#countries .container.dubai .top img {
+    height: 330px;
+    margin: 15px;
     border-radius: 10px;
 }
-#countries .container.dubai .bottom img{
-    height:200px;
-    margin:15px;
+
+#countries .container.dubai .bottom img {
+    height: 200px;
+    margin: 15px;
     border-radius: 10px;
 }
 
 #countries .container.mauritius {
     flex-wrap: wrap;
 }
-#countries .container.mauritius  img{
-    height:300px;
-    margin:15px;
+
+#countries .container.mauritius img {
+    height: 300px;
+    margin: 15px;
     border-radius: 10px;
 }
-#countries .container.saudi{
+
+#countries .container.saudi {
     /* flex-direction: row; */
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-#countries .container.saudi  img{
-    height:300px;
-    margin:15px;
-    border-radius: 10px;
-}
-#countries .container.saudi .centerContainer img{
-    height:270px;
-    margin:15px;
+
+#countries .container.saudi img {
+    height: 300px;
+    margin: 15px;
     border-radius: 10px;
 }
 
-#countries .container .imgContainer{
-    position:relative;
+#countries .container.saudi .centerContainer img {
+    height: 270px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+#countries .container .imgContainer {
+    position: relative;
     overflow: hidden;
 }
-#countries .container .imgContainer .popup{
+
+#countries .container .imgContainer .popup {
     position: absolute;
     bottom: 1%;
-    left:-10%;
+    left: -10%;
     padding: 10px;
-    opacity:0;
+    opacity: 0;
     background-color: #000000b3;
     color: white;
     border-radius: 0 0 5px 5px;
     width: 100%;
     z-index: -1;
+    font-family: 'Poppins, Medium';
 }
-#countries .container .imgContainer:hover .popup{
+
+#countries .container .imgContainer:hover .popup {
     z-index: 2;
-    opacity:1;
-    left:0%;
-    transition: z-index 0.1s linear,opacity 0.3s linear,left 0.3s linear;
+    opacity: 1;
+    left: 0%;
+    transition: z-index 0.1s linear, opacity 0.3s linear, left 0.3s linear;
+    font-family: 'Poppins, Medium';
 }
 
 
 /* Services Styles */
 
-#services{
-    padding:30px 0;
+#services {
+    padding: 30px 0;
 }
-#services h3{
+
+#services h3 {
     font-size: 30px;
 }
+
 /* #services .container img{
     width:100%;
 } */
-#services .container{
+#services .container-service {
     /* position:relative; */
-    width:100%;
+    width: 100%;
 }
-#services h3{
-    margin:20px 0;
+
+#services h3 {
+    margin: 20px 0;
 }
-#services .container .top,#services .container .bottom{
-    position:relative;
+
+#services .container-service .top,
+#services .container-service .bottom {
+    position: relative;
     /* width:100%; */
 }
-#services .container .top,#services .container .bottom{
-    overflow:hidden;
+
+#services .container-service .top,
+#services .container-service .bottom {
+    overflow: hidden;
 }
-#services .container .top img,#services .container .bottom img{
+
+#services .container-service .top img,
+#services .container-service .bottom img {
     /* width:100%; */
 }
-#services .top .bgContainer.img1{
 
-    background-image:url("../images/servicesBg1.svg");
-}
-#services .bottom .bgContainer.img2{
+#services .top .bgContainer.img1 {
 
-    background-image:url("../images/servicesBg2.svg");
+    background-image: url("../images/servicesBg1.svg");
 }
-#services .bgContainer{
+
+#services .bottom .bgContainer.img2 {
+
+    background-image: url("../images/servicesBg2.svg");
+}
+
+#services .bgContainer {
     /* background-image:url("../images/servicesBg1.svg"); */
-    width:100%;
+    width: 100%;
     background-position: center;
     background-size: cover;
-    height:500px;
+    height: 739px;
 }
-#services .container .top .text{
+
+#services .container-service .top .text {
     align-items: start;
     position: absolute;
-    width: 30%;
-    height: 500px;
+    width: 39%;
+    height: 740px;
     background-color: #004bad82;
     color: white;
     left: 0%;
     top: 0%;
     /* padding: 20px; */
-    padding: 0 15%;
+    /* padding: 0 15%; */
 }
-#services .container .bottom .text{
+
+.service-para {
+    font-family: "Poppins, Medium";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29.25px;
+    padding: 0px 100px;
+}
+
+#services .container-service .bottom .text {
     position: absolute;
-    width: 30%;
-    height: 500px;
+    width: 39%;
+    height: 740px;
     background-color: #004bad82;
     color: white;
     right: 0%;
     top: 0%;
     /* padding: 20px; */
-    padding: 0 15%;
-}
-#services .container .text p{
-    margin:20px 0;
-    font-size: 30px;
-}
-#services .icons{
-    margin:10px 0;
-}
-#services .icons p{
-    margin: 0 5px!important;
+    /* padding: 0 15%; */
 }
 
-#services .container .bgContainer:hover {
+h2.apartment {
+    font-family: "Poppins, Medium";
+    font-size: 36px;
+    font-weight: 700;
+}
+
+p.price {
+    font-family: 'Poppins, Medium';
+    font-size: 16.692px;
+    font-weight: 400;
+}
+
+h3.s-service {
+    font-family: 'Poppins, Medium';
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#services .container-service .text p {
+    margin: 20px 0;
+    /* font-size: 30px; */
+}
+
+#services .icons {
+    margin: 60px 80px;
+}
+
+#services .icons p {
+    margin: 0 5px !important;
+}
+
+#services .container-service .bgContainer:hover {
     transform: scale(1.07);
     transition: transform 0.2s ease-in-out;
 }
@@ -354,41 +557,122 @@ html{
 } */
 
 
+
+
+
+
+
+/* FOOTER */
+
+img.footer-logo {
+    /* width: 100%; */
+    height: 189px;
+}
+
+.footer-bg {
+    background-image: url("../images/footer.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    /* height: 100vh; */
+    box-shadow: 4px 0px 40px 0px rgba(0, 0, 0, 0.10);
+    /* mix-blend-mode: luminosity; */
+}
+
+.footer-us {
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    font-family: "Poppins, Medium";
+}
+
+.footer-para {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36.1px;
+    font-family: "Poppins, Medium";
+}
+
+
+.col-md-4.about-us {
+    padding: 0px 60px;
+}
+
+.col-md-4.contact-us {
+    padding: 0px 60px;
+}
+
+.copyright {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins, Medium";
+}
+
+.title {
+    color: #004AAD;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins, Medium";
+}
+
+
+.padding {
+    padding: 1rem 6rem;
+}
+
+
+
+
+
+
+
+
+
 /* Apartments Section */
 
-#apartments{
-    padding:30px;
+#apartments {
+    padding: 30px;
 }
 
-#apartments .container .imgs{
-    padding:30px 0;
-    align-items:start;
-   flex-wrap:wrap;
-   overflow:hidden;
-   border-radius:20px;
+#apartments .container .imgs {
+    padding: 30px 0;
+    align-items: start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
-#apartments .container .top,#apartments .container .bottom,#apartments .container .centerContainer div{
-    overflow:hidden;
-    border-radius:20px;
+#apartments .container .top,
+#apartments .container .bottom,
+#apartments .container .centerContainer div {
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 
-#apartments .container .top,#apartments .container .bottom,#apartments .container .centerContainer img{
-    margin:10px;
-   
+#apartments .container .top,
+#apartments .container .bottom,
+#apartments .container .centerContainer img {
+    margin: 10px;
+
 }
-#apartments .container .top img,#apartments .container .bottom img{
-    height:450px;
+
+#apartments .container .top img,
+#apartments .container .bottom img {
+    height: 450px;
     /* margin:10px; */
 }
-#apartments .container .centerContainer img{
-    height:270px;
+
+#apartments .container .centerContainer img {
+    height: 270px;
     /* margin:10px; */
 }
-#apartments .container  img:hover{
-    transform:scale(1.15);
-    transition:transform 0.2s ease-in-out;
+
+#apartments .container img:hover {
+    transform: scale(1.15);
+    transition: transform 0.2s ease-in-out;
 }
 
 
@@ -396,97 +680,113 @@ html{
 
 /* CSS Animations */
 
-@keyframes slideLeft{
-    0%{
-        transform:translateX(-100%);
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-100%);
     }
-    100%{
-        transform:translateX(0);
+
+    100% {
+        transform: translateX(0);
     }
 }
-@keyframes slideRight{
-    0%{
-        transform:translateX(100%);
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(100%);
     }
-    100%{
-        transform:translateX(0);
+
+    100% {
+        transform: translateX(0);
     }
 }
 
 
 @keyframes changingBG {
-    0%{
+    0% {
         /* opacity:0.8; */
         background-image: url("../images/headerBg1.svg");
     }
-    50%{
+
+    50% {
         /* opacity:0.8; */
         background-image: url("../images/headerBg2.svg");
     }
-    100%{
+
+    100% {
         background-image: url("../images/headerBg1.svg");
 
     }
 
 }
 
-@keyframes slideRightIn{
-    0%{
+@keyframes slideRightIn {
+    0% {
         transform: translateX(15%);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
-@keyframes slideLeftIn{
-    0%{
+
+@keyframes slideLeftIn {
+    0% {
         transform: translateX(-15%);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
-@keyframes slideDown{
-    0%{
+
+@keyframes slideDown {
+    0% {
         transform: translateY(-100%);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
-@keyframes slideUp{
-    0%{
+
+@keyframes slideUp {
+    0% {
         transform: translateY(100%);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
-@keyframes slideLightDown{
-    0%{
+
+@keyframes slideLightDown {
+    0% {
         transform: translateY(-50%);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
 
-@keyframes heightChange{
-    0%{
-        height:0;
+@keyframes heightChange {
+    0% {
+        height: 0;
     }
-    100%{
-        height:auto;
+
+    100% {
+        height: auto;
     }
 }
 
-@keyframes changeOpacity{
-    0%{
-        opacity:0;
+@keyframes changeOpacity {
+    0% {
+        opacity: 0;
     }
-    100%{
-    opacity:1;
-}
+
+    100% {
+        opacity: 1;
+    }
 
 }
 
@@ -497,8 +797,10 @@ html{
 
 
 /* Tablet Sized Media Query */
-@media (min-width:768px) and (max-width:1024px){
-    #services .container .top .text p,#services .container .bottom .text p{
+@media (min-width:768px) and (max-width:1024px) {
+
+    #services .container-service .top .text p,
+    #services .container-service .bottom .text p {
         margin: 10px;
         font-size: 22px;
     }
@@ -510,114 +812,272 @@ html{
 
 /* Mobile Size Media Queries */
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:768px) {
 
-    
+
 
     /* Header text */
-    #header #bgImg .top h1{
-        font-size:25px;
+    #header #bgImg .top h1 {
+        font-size: 25px;
     }
-    #header #bgImg .top h3{
+
+    #header #bgImg .top h3 {
         font-size: 20px;
     }
+
     #quality .head {
-    width: 70%;
-    margin: 30px 0;
-}
-    #header #bgImg .bottom h6{
-        font-size:14px;
-        font-weight: 600;
+        width: 70%;
+        margin: 30px 0;
     }
-    #header #bgImg{
-        width:80%;
+
+    #header #bgImg .bottom h6 {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0;
+    }
+
+    #header #bgImg {
+        width: 80%;
     }
 
 
     /* Qatar About */
-    #qatarAbout .container{
-        width:80%;
-    }
-    #qatarAbout .container img{
-        height:150px;
+    #qatarAbout .container {
+        /* width: 80%; */
     }
 
-#qatarAbout .container .text h3{
-    font-size: 20px;
+    #qatarAbout .container img {
+        width: 467px;
+        height: 479px;
+    }
 
-}
-#qatarAbout .container .text {
-    width:100%;
-}
-#qatarAbout .container{
-    flex-direction: column!important;
-}
-#qatarAbout .container .rectangle{
-    width:120px;
-    height:120px;
-}
+    #qatarAbout .container .text h3 {
+        font-size: 20px;
 
+    }
 
-/* Countries */
-#countries .container.qatar{
-    flex-wrap: wrap;
-}
-#countries .container.qatar .top img{
+    #qatarAbout .container .text {
+        width: 100%;
+    }
 
-    height:200px;
-}
-#countries .container.qatar .bottom img{
-    height:110px;
-}
-#countries .container.mauritius .top,#countries .container.mauritius .bottom{
-    flex-direction: column;
-}
-#countries .container.mauritius img{
+    #qatarAbout .container {
+        flex-direction: column !important;
+    }
 
-    height:200px!important;
-}
-#countries .container.saudi .top,#countries .container.saudi .centerContainer,#countries .container.saudi .bottom{
-    flex-direction: column;
-}
-
-#countries .container.saudi img{
-    height:200px!important;
-}
-
-#countries .container .imgContainer .popup h3,#countries .container .imgContainer .popup p{
-    font-size:15px;
-    margin:5px 0;
-}
-#countries .container .imgContainer .popup p{
-    font-size:10px;
-    width: 90%;
-
-}
+    #qatarAbout .container .rectangle {
+        width: 443px;
+        height: 391px;
+    }
 
 
-/* Services Section */
-#services .container .top .text,#services .container .bottom .text{
-    width: 70%;
-}
-#services .container .top .text p,#services .container .bottom .text p{
-    margin: 10px;
-    font-size: 18px;
-}
-#services .icons{
-    margin:10px;
-}
-#services .container .top .text,#services .container .bottom .text{
-    padding:0 10%;
+    /* Countries */
+    #countries .container.qatar {
+        flex-wrap: wrap;
+    }
+
+    #countries .container.qatar .top img {
+
+        height: 200px;
+    }
+
+    #countries .container.qatar .bottom img {
+        height: 110px;
+    }
+
+    #countries .container.mauritius .top,
+    #countries .container.mauritius .bottom {
+        flex-direction: column;
+    }
+
+    #countries .container.mauritius img {
+
+        height: 200px !important;
+    }
+
+    #countries .container.saudi .top,
+    #countries .container.saudi .centerContainer,
+    #countries .container.saudi .bottom {
+        flex-direction: column;
+    }
+
+    #countries .container.saudi img {
+        height: 200px !important;
+    }
+
+    #countries .container .imgContainer .popup h3,
+    #countries .container .imgContainer .popup p {
+        font-size: 15px;
+        margin: 5px 0;
+    }
+
+    #countries .container .imgContainer .popup p {
+        font-size: 10px;
+        width: 90%;
+
+    }
+
+
+    /* Services Section */
+    #services .container-service .top .text,
+    #services .container-service .bottom .text {
+        width: 70%;
+    }
+
+    #services .container-service .top .text p,
+    #services .container-service .bottom .text p {
+        margin-left: 144px;
+        font-size: 18px;
+    }
+
+    #services .icons {
+        margin-left: 90px;
+    }
+
+    #services .container-service .top .text,
+    #services .container-service .bottom .text {
+        padding: 0 10%;
+    }
+
+
+    /* Apartments */
+    #apartments .container {
+        flex-direction: column;
+    }
+
+    /* About */
+    #about .container {
+        width: 80%;
+    }
 }
 
 
-/* Apartments */
-#apartments .container {
-    flex-direction:column;
-}
 
-/* About */
-#about .container{
-    width:80%;
-}
+
+/* MOBILE SCREEN */
+
+@media only screen and (max-width: 992px) {
+
+    :root {
+        scroll-behavior: smooth;
+        width: fit-content;
+    }
+
+    #services .container-service .top .text p, #services .container-service .bottom .text p {
+        margin-left: 0px;
+        font-size: 17px;
+    }
+
+    #services .icons {
+        margin-left: 0px;
+    }
+
+    #about {
+        background-image: url("../images/aboutBg.svg");
+        width: 105%;
+        background-size: cover;
+        height: 810px;
+        background-position: center;
+    }
+
+    /* #header {
+        width: 105%;
+        background-image: url("../images/qatarbg.svg");
+        background-size: cover;
+        height: 800px;
+        animation: changingBG 9s ease-in-out infinite;
+        display: flex;
+        align-items: center;
+        background-position: center;
+    } */
+
+    #services .container-service .top, #services .container-service .bottom {
+        overflow: hidden;
+        width: 105%;
+    }
+    
+
+    p.welcome {
+        color: #FFF;
+        text-align: center;
+        font-family: "Poppins, Medium";
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0;
+        line-height: 23.6px;
+    }
+
+    .our-team {
+        text-align: center;
+        font-family: "Poppins, Medium";
+        font-size: 30px;
+        color: #FFF;
+        font-weight: 700;
+        line-height: 37.6px;
+        padding: 0;
+    }
+
+    .vision {
+        font-family: 'Poppins, Medium';
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    #about .container p, #about .container h2, #about .container p, #about .container a {
+        margin: 6px 0;
+    }
+
+    .v-para {
+        font-family: 'Poppins, Medium';
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24.6px;
+    }
+
+    .service-para {
+        font-family: "Poppins, Medium";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 29.25px;
+        padding: 0px;
+    }
+
+    img.footer-logo {
+        width: 100%;
+        height: 189px;
+    }
+
+    .col-md-4.about-us {
+        padding: 0px;
+    }
+
+    .col-md-4.contact-us {
+        padding: 0px;
+    }
+
+    .padding {
+        padding: 1rem 2rem;
+    }
+
+    .footer-bg {
+        background-image: url("../images/footer.png");
+        background-position: center;
+        background-size: cover;
+        width: 105%;
+        /* height: 100vh; */
+        box-shadow: 4px 0px 40px 0px rgba(0, 0, 0, 0.10);
+        /* mix-blend-mode: luminosity; */
+    }
+
+    .order1{
+        order: 2;
+    }
+
+    .order2{
+        order: 1;
+    }
+
+    .social-media{
+       justify-content: center;
+    }
+
 }
