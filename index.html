@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Sky</title>
+
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="styles/landingPage.css"/>
+    <link rel="stylesheet" href="styles/globalStyles.css"/>
+
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navbar Section -->
+    <!-- Navbar Styles are in the globalStyles.css file -->
+
+    
+    <section id="navBar container" class="center-row">
+    
+
+    <nav class="navbar">
+        <!-- brand logo -->
+        <div class="logo">
+            <img alt="Logo" src="images/logo.svg"/>
+        </div>
+
+        <!-- nav-bar links which redirects -->
+        <ul class="nav-links">
+            
+            <!-- hamburger menu with checkbox toggle -->
+            <input type="checkbox" id="checkbox_toggle">
+            <label for="checkbox_toggle" class="hamburger-menu">&#9776</label>
+
+            <!-- a tags and button -->
+            <div class="menu">
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Real Estate</a></li>
+                    <li><a href="trading.html">Trading</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="conatctUs.html"><button>Contact Us</button></a></li>
+            </div>
+        </ul>
+    </nav>
+
+    
+</section>
+    <!-- Header Section -->
+
+    <section id="header" class="center-row element" >
+        <!-- <img src="images/headerBg1.svg" class="bgImg1"/> -->
+        <!-- <img src="images/headerBg2.svg" class="bgImg2"/> -->
+        <div id="bgImg" class="center-col">
+            <div class="top">
+                <h3 class="noOpacity rightHead" >CitySky</h3>
+                <h1 class="noOpacity rightHead" >Real Estate & Trading</h1>
+
+            </div>
+            <div class="bottom">
+            <h6  class="noOpacity rightHead" id="leftHead">Join us in shaping your future - explore CitySky Real Estate & Trading today and take a step towards new horizons!</h6>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="qatarAbout" class="center-col ">
+        <div class="top container center-row element">
+           <div class="img-container">
+            <span class="rectangle"></span>
+            <img src="images/qatarAbout1.svg" alt="Qatar Building" />
+           </div>
+           <div class="center-spaceBetween text">
+            <h3 class="poppins-font">Qatar's <span class="blue-colored">Real Estate</span> Where Vision Shapes <span class="blue-colored">Skylines</span> </h3>
+
+            <p class="poppins-font">Experience a realm of architectural marvels and visionary developments in Qatar's dynamic real estate sector. Fueled by innovation and propelled by ambition, Qatar transforms its landscape with iconic skyscrapers, luxurious residences, and modern urban environments. With a commitment to sustainability and excellence, Qatar's real estate sector reflects a harmonious blend of tradition and modernity, offering unparalleled lifestyle and investment opportunities.</p>
+           </div>
+        </div>
+
+        <div class="bottom container center-row element">
+           <div class="img-container">
+            <span class="rectangle"></span>
+            <img src="images/qatarAbout2.svg" alt="Qatar Building" />
+           </div>
+           <div class="center-spaceBetween text">
+            <h3 class="poppins-font">Qatar is a <span class="blue-colored">Dynamic</span> Global <span class="blue-colored">Trading</span> Hub</h3>
+            <p class="poppins-font">Situated at the crossroads of international trade routes, Qatar emerges as a thriving trading hub. Boasting modern infrastructure, strategic location, and a business-friendly environment, Qatar connects markets and industries with seamless efficiency. With state-of-the-art ports, cutting-edge airports, and a commitment to diversification, Qatar facilitates the movement of goods, investments, and opportunities across continents, redefining the art of trade on a global stage.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!-- About Section -->
+
+<section id="about" class="center-row element">
+    <div class="container center-col">
+        <p>ABOUT US</p>
+        <h2 class="txt-center">Our team is composed of professionals who specialize in real estate.</h2>
+        <p class="txt-center">Welcome to City Sky, where we redefine urban living through our exceptional real estate offerings. As a premier real estate company, we specialize in crafting living spaces that seamlessly blend sophistication, comfort, and contemporary design. Our portfolio showcases a diverse range of properties that stand as architectural marvels against the city skyline.</p>
+
+        <a>Contact Us</a>
+    </div>
+</section>
+
+
+<!-- Countries wise Tab Switching -->
+    <section id="countries" class="center-row element">
+        <div class="top">
+            <p class="txt-center poppins-font">OUR PRESENCE</p>
+            <h3 class="txt-center poppins-font">We are in <span  class="blue-colored">four</span> countries</h3>
+            <div class="buttons txt-center">
+
+                <button class="btn active" onclick="handleTab(this)" value="QATAR">QATAR</button>
+                <button class="btn" onclick="handleTab(this)" value="UAE">UAE</button>
+                <button class="btn" onclick="handleTab(this)" value="MAURITIUS">MAURITIUS</button>
+                <button class="btn" onclick="handleTab(this)" value="SAUDI">SAUDI ARABIA</button>
+            </div>
+
+<!-- Countries Wise Photos -->
+<!-- QATAR -->
+            <div class="container qatar active center-row" id="countriesTab">
+                <div class="top center-col">
+                    
+                    <div class="imgContainer">
+                        <img src="images/qatar1.svg" alt="Qatar Country"/>
+                        <div class="popup">
+                            <h3>Tornado Tower</h3>
+                            <p>Another Doha landmark in West Bay</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom center-col">
+                    <div class="imgContainer">
+                        <img src="images/qatar2.svg" alt="Qatar Country"/>
+                        <div class="popup">
+                            <h3>Katara Towers</h3>
+                            <p>The shape of this Doha landmark was inspired by the national emblem of Qatar</p>
+                        </div>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="images/qatar3.svg" alt="Qatar Country"/>
+                        <div class="popup">
+                            <h3>The National Museum of Qatar</h3>
+                            <p>The museum is inspired by the desert rose and pays a tribute to the heritage architecture</p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+
+        <!-- UAE -->
+
+            <div class="container dubai center-spaceEvenly">
+                <div class="top center-col">
+
+                    <img src="images/dubai1.svg" alt="Dubai Country"/>
+                    <img src="images/dubai3.svg" alt="Dubai Country"/>
+                </div>
+                <div class="bottom center-col">
+                    <img src="images/dubai2.svg" alt="Dubai Country"/>
+                    <img src="images/dubai4.svg" alt="Dubai Country"/>
+                    <img src="images/dubai5.svg" alt="Dubai Country"/>
+                </div>
+            </div>
+
+            <!-- Mauritius -->
+            <div class="container mauritius center-spaceEvenly">
+                <div class="top center-row">
+
+                    <img src="images/mauritius1.svg" alt="Mauritius Country"/>
+                    <img src="images/mauritius3.svg" alt="Mauritius Country"/>
+                </div>
+                <div class="bottom center-row">
+                    <img src="images/mauritius4.svg" alt="Mauritius Country"/>
+                    <img src="images/mauritius2.svg" alt="Mauritius Country"/>
+                   
+                </div>
+            </div>
+
+            <!-- Saudi -->
+            <div class="container saudi center-spaceEvenly">
+                <div class="top center-row">
+
+                    <img src="images/saudi1.svg" alt="Mauritius Country"/>
+                    <img src="images/saudi6.svg" alt="Mauritius Country"/>
+                </div>
+                <div class="centerContainer center-row">
+                    <img src="images/saudi2.svg" alt="Mauritius Country"/>
+                    <img src="images/saudi4.svg" alt="Mauritius Country"/>
+                    
+                </div>
+                <div class="bottom center-row">
+                    
+                    <img src="images/saudi5.svg" alt="Mauritius Country"/>
+                    <img src="images/saudi3.svg" alt="Mauritius Country"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section id="services" class="center-col">
+        <h3>Our <span class="blue-colored">Services</span></h3>
+
+        <div class="container">
+            <div class="top">
+                <div class="bgContainer img1">
+
+                </div>
+                <!-- <img src="images/servicesBg1.svg" /> -->
+                <div class="text center-col">
+                    <p> Welcome to CitySky real estate investment company! We are thrilled to offer you a comprehensive suite of services that cater to all your investment needs. As a leading player in this industry, we pride ourselves on delivering exceptional results that exceed our clients' expectations. </p>
+
+                    <div class="center-row icons">
+   
+                        <img src="icons/priceIcon.svg" alt="Price Icon"/>
+                        <p class="txt-center">Best Price</p>
+                  
+                        <img src="icons/highReturnIcon.svg" alt="Price Icon"/>
+                        <p class="txt-center">High Security</p>
+                   
+                        
+                        <img src="icons/secureIcon.svg" alt="Price Icon"/>
+                        <p class="txt-center">100% Secure</p>
+                   
+                </div>
+                </div>
+           
+        </div>
+        <div class="bottom">
+            <div class="bgContainer img2">
+
+            </div>
+            <!-- <img src="images/servicesBg2.svg" /> -->
+            <div class="text center-col">
+                <p>  If you are looking to invest in real estate, we offer a range of investment options that are designed to meet your unique needs. We specialize in both commercial and residential properties and have a robust portfolio of properties that offer high returns on investment. Our team of experts will work closely with you to identify the best investment opportunities that align with your investment goals. </p>
+
+                
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+    <section id="apartments" class="center-row element">
+        <div class="container center-col">
+            <h2>Luxury Apartments</h2>
+            <div class="imgs center-row">
+                <div class="top center-row">
+                    <img src="images/apartment4.svg" alt="Apartments" />
+                </div>
+                <div class="centerContainer center-col">
+                    <div>
+                        <img src="images/apartment3.svg" alt="Apartments" />
+                    </div>
+                    <div>
+                        <img src="images/apartment2.svg" alt="Apartments" />
+                    </div>
+                </div>
+                <div class="bottom center-row">
+                    
+                    <img src="images/apartment1.svg" alt="Apartments" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <!-- Footer Styles are in the globalStyles.css file -->
+
+
+    <section id="footer">
+            <!-- <div class="emptyBg">
+
+            </div> -->
+
+            <div class="imgContainer">
+                <img src="images/logo.svg" alt="Logo"/>
+            </div>
+            <div class="hrLine">
+                <hr>
+              </div>
+
+              <div class="footer-body center-row">
+                
+            <div class="center-row container">
+                <div class="center-col about">
+                    <h4>About Us</h4>
+                    <p class="">Heaven fruitful doesn't over lesser days appear creeping seasons so behold days open.</p>
+                    <div class="center-row icons">
+                        <a>
+                            <img src="icons/fbIcon.svg" alt="Facebook Icon"/>
+                        </a>
+                        <a>
+                            <img src="icons/twitterIcon.svg" alt="Twitter Icon"/>
+                        </a>
+                        <a>
+                            <img src="icons/linkedInIcon.svg" alt="LinkedIn Icon"/>
+                        </a>
+                        <a>
+                            <img src="icons/youtubeIcon.svg" alt="Youtube Icon"/>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="center-col contact">
+                    <h4>Contact Us</h4>
+
+
+                    <div class="parent">
+                        <div class="child">
+                            <!-- Icon -->
+                            <!-- <span class="material-symbols-outlined">
+                                location_on
+                                </span> -->
+
+                                <img src="icons/locationIcon.svg" alt="Location Icon" />
+                                
+                                
+                                <p >Tornado Tower,Floor 22,Westbau,Doha,Qatar.</p>
+                            </div>
+                            <div class="child">
+                                <!-- Icon -->
+                                <!-- <span class="material-symbols-outlined">
+                                    call
+                                </span> -->
+
+                                <img src="icons/phoneIcon.svg" alt="Phone Icon" />
+                                <p >+974 44292369</p>
+                        </div>
+                        <div class="child">
+                            <!-- Icon -->
+                            <!-- <span class="material-symbols-outlined">
+                                mail
+                                </span> -->
+
+                                <img src="icons/mailIcon.svg" alt="Mail Icon" />
+                            <p >demo@example.com</p>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+
+        </div>
+            <div class="hrLine">
+              <hr>
+            </div>
+            <h5 class="txt-center copyright">Copyright 2023 All rights reserved by <a class="blue-colored">CitySky</a></h5>
+    </section>
+
+    <script src="index.js" rel="text/javascript"></script>
+        
+</body>
+</html>
+
+
+
+<!-- Welcome to CitySky real estate investment company! We are thrilled to offer you a comprehensive suite of services that cater to all your investment needs. As a leading player in this industry, we pride ourselves on delivering exceptional results that exceed our clients' expectations. -->
+
+
+<!-- If you are looking to invest in real estate, we offer a range of investment options that are designed to meet your unique needs. We specialize in both commercial and residential properties and have a robust portfolio of properties that offer high returns on investment. Our team of experts will work closely with you to identify the best investment opportunities that align with your investment goals. -->
+
+
+<!-- <div class="center-row icons">
+   
+            <img src="icons/priceIcon.svg" alt="Price Icon"/>
+            <p class="txt-center">Best Price</p>
+      
+            <img src="icons/highReturnIcon.svg" alt="Price Icon"/>
+            <p class="txt-center">High Security</p>
+       
+            
+            <img src="icons/secureIcon.svg" alt="Price Icon"/>
+            <p class="txt-center">100% Secure</p>
+       
+    </div> -->

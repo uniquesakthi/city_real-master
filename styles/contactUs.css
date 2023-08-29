@@ -1,0 +1,178 @@
+* {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.contactus-bg {
+    background-image: url("../images/contactUs.svg");
+    width: 100%;
+    height: 442px;
+    background-position: center;
+    background-size: cover;
+}
+
+h4.c-title {
+    color: #FFF;
+    text-align: center;
+    font-family: "Poppins, Medium";
+    font-size: 64px;
+    font-weight: 800;
+    padding: 12rem 0px;
+}
+
+
+
+
+.map-container-3 {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container-3 iframe {
+    left: 0;
+    top: 0;
+    height: 500%;
+    width: 100%;
+    position: absolute;
+}
+
+.title {
+    color: #004AAD;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins, Medium";
+}
+
+.c-header {
+    color: #000;
+    font-family: "Poppins, Medium";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.c-para {
+    color: #A2A2A2;
+    font-family: "Poppins, Medium";
+    font-size: 16px;
+    font-weight: 700;
+    /* padding: 0px 57px 0px 0px; */
+}
+
+.c-no {
+    color: #A2A2A2;
+    font-family: "Poppins, Medium";
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.padding {
+    padding: 1rem 6rem;
+}
+
+.pad-3 {
+    padding: 3rem !important;
+}
+
+.detail {
+    background: #FFF;
+    box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.10);
+    /* padding: 62px 67px 61px 68px; */
+    padding: 1rem 2rem;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+img.footer-logo {
+    /* width: 100%; */
+    height: 189px;
+}
+
+.footer-bg {
+    background-image: url("/images/footer.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    /* height: 100vh; */
+    box-shadow: 4px 0px 40px 0px rgba(0, 0, 0, 0.10);
+    /* mix-blend-mode: luminosity; */
+}
+
+.footer-us {
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    font-family: "Poppins, Medium";
+}
+
+.footer-para {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36.1px;
+    font-family: "Poppins, Medium";
+}
+
+
+.col-md-4.about-us {
+    padding: 0px 60px;
+}
+
+.col-md-4.contact-us {
+    padding: 0px 60px;
+}
+
+.copyright {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins, Medium";
+}
+
+
+
+
+
+
+
+
+/* MOBILE SCREEN */
+
+@media only screen and (max-width: 992px) {
+
+    .pad-3 {
+        padding: 1rem !important;
+    }
+
+    img.footer-logo {
+        width: 100%;
+        height: 189px;
+    }
+
+    .col-md-4.about-us {
+        padding: 0px;
+    }
+
+    .col-md-4.contact-us {
+        padding: 0px;
+    }
+
+    .padding {
+        padding: 1rem 2rem;
+    }
+}

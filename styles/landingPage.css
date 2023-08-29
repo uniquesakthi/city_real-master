@@ -1,0 +1,623 @@
+
+
+*{
+    margin:0px;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+#header{
+    width:100%;
+     background-image:url("../images/headerBg1.svg");
+     background-size:cover ;
+     height:90vh;
+     /* animation:changingBG 9s ease-in-out infinite ; */
+     display: flex;
+     align-items: center;
+     background-position: center;
+}
+/* #header {
+    width: 100%;
+    height:90vh;
+    overflow: hidden;
+    position: relative;
+} */
+#header #bgImg{
+    width: 70%;
+    height: 300px;
+    justify-content: space-evenly;
+   
+    /* position: absolute;
+    top: 25%;
+    left: 10% */
+}
+#header #bgImg .top h1,#header #bgImg .top h3{
+    color:white;
+    font-family: 'Poppins', Arial, sans-serif;
+   
+    /* font-family: */
+}
+#header #bgImg .top h1{
+    text-align: center;
+    /* opacity: 0; */
+    font-size: 45px;
+    font-weight:700;
+    animation : slideRightIn 0.5s ease-in;
+    animation-delay: 1.1s;
+}
+#header #bgImg .top h3{
+    font-size: 30px;
+    animation : slideLeftIn 0.5s ease-in;
+    animation-delay: 1.1s;
+
+}
+#header #bgImg .bottom h6{
+    color:white;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center; 
+    font-family: 'Poppins', Arial, sans-serif;
+   animation :changeOpacity 0.8s ease-in;
+   animation-delay:1.1s;
+}
+
+
+
+/* Qatar About Building Styles */
+
+#qatarAbout{
+    padding:30px 0;
+    width:100%;
+}
+#qatarAbout .container{
+    width:70%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin:20px 0;
+}
+#qatarAbout .bottom.container{
+    flex-direction: row-reverse;
+}
+#qatarAbout .container .img-container{
+   position:relative;
+}
+#qatarAbout .container img{
+    height:300px;
+}
+#qatarAbout .container .text{
+    width:60%;
+    /* height:200px; */
+    align-items: start;
+}
+#qatarAbout .container .text h3,#qatarAbout .container .text p{
+    margin:15px;
+}
+#qatarAbout .container .text h3{
+    font-size: 30px;
+
+}
+
+#qatarAbout .container .rectangle{
+   
+    width: 270px;
+    height: 270px;
+    display: block;
+    position: absolute;
+    border-radius: 14px;
+  
+    top: -7%;
+    z-index:-1;
+}
+
+#qatarAbout .top.container .rectangle{
+    background-color: #306F821A;
+    left: -7%;
+}
+#qatarAbout .bottom.container .rectangle{
+    background-color: #FAAE5426;
+    right: -7%;
+}
+
+#qatarAbout .top.container.addAnimation .img-container,#qatarAbout .bottom.container.addAnimation .text{
+    animation:slideLeft 0.5s ease-in-out;
+}
+#qatarAbout .bottom.container.addAnimation .img-container,#qatarAbout .top.container.addAnimation .text{
+    animation:slideRight 0.5s ease-in-out;
+}
+
+/* About Section */
+#about{
+    background-image: url("../images/aboutBg.svg");
+    width:100%;
+    background-size:cover ;
+    height:90vh;
+    background-position: center;
+}
+#about .container{
+    width:70%;
+    color:white;
+}
+#about .container a{
+    background-color:white;
+    color:black;
+    padding:10px;
+    border-radius: 20px;
+}
+#about .container a:hover{
+    background-color:black;
+    color:white;
+    /* padding:20px; */
+    transition: background-color 0.2s linear;
+}
+#about .container p,#about .container h2,#about .container p,#about .container a{
+    margin:20px 0;
+}
+#about.addAnimation .container p{
+    animation : slideDown 0.7s ease-in-out;
+}
+#about.addAnimation .container p.txt-center,#about.addAnimation .container h2,#about.addAnimation .container a{
+
+    animation : slideUp 0.7s ease-in-out;
+}
+
+/* Countries Section */
+
+#countries .top p, #countries .top h3,#countries .buttons{
+    margin:20px 0;
+}
+#countries .buttons .btn{
+    background:transparent;
+    border:none;
+    /* margin:10px; */
+    padding:10px;
+}
+#countries .buttons .btn.active{
+    background-color:#004AAD;
+    border-radius: 20px;
+    color:white;
+    transition:background-color 0.1s linear,color 0.1s linear;
+}
+#countries .container{
+    display:none;
+}
+#countries .container.active{
+    display: flex;
+}
+#countries .container.qatar .top img{
+    height:450px;
+}
+#countries .container.qatar .top,#countries .container.qatar .bottom{
+    margin:10px 0;
+}
+#countries .container .imgContainer{
+
+    margin:10px;
+}
+#countries .container.qatar .bottom img{
+    height:200px;
+   
+}
+#countries .container.dubai {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#countries .container.dubai .top img{
+    height:330px;
+    margin:15px;
+    border-radius: 10px;
+}
+#countries .container.dubai .bottom img{
+    height:200px;
+    margin:15px;
+    border-radius: 10px;
+}
+
+#countries .container.mauritius {
+    flex-wrap: wrap;
+}
+#countries .container.mauritius  img{
+    height:300px;
+    margin:15px;
+    border-radius: 10px;
+}
+#countries .container.saudi{
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#countries .container.saudi  img{
+    height:300px;
+    margin:15px;
+    border-radius: 10px;
+}
+#countries .container.saudi .centerContainer img{
+    height:270px;
+    margin:15px;
+    border-radius: 10px;
+}
+
+#countries .container .imgContainer{
+    position:relative;
+    overflow: hidden;
+}
+#countries .container .imgContainer .popup{
+    position: absolute;
+    bottom: 1%;
+    left:-10%;
+    padding: 10px;
+    opacity:0;
+    background-color: #000000b3;
+    color: white;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    z-index: -1;
+}
+#countries .container .imgContainer:hover .popup{
+    z-index: 2;
+    opacity:1;
+    left:0%;
+    transition: z-index 0.1s linear,opacity 0.3s linear,left 0.3s linear;
+}
+
+
+/* Services Styles */
+
+#services{
+    padding:30px 0;
+}
+#services h3{
+    font-size: 30px;
+}
+/* #services .container img{
+    width:100%;
+} */
+#services .container{
+    /* position:relative; */
+    width:100%;
+}
+#services h3{
+    margin:20px 0;
+}
+#services .container .top,#services .container .bottom{
+    position:relative;
+    /* width:100%; */
+}
+#services .container .top,#services .container .bottom{
+    overflow:hidden;
+}
+#services .container .top img,#services .container .bottom img{
+    /* width:100%; */
+}
+#services .top .bgContainer.img1{
+
+    background-image:url("../images/servicesBg1.svg");
+}
+#services .bottom .bgContainer.img2{
+
+    background-image:url("../images/servicesBg2.svg");
+}
+#services .bgContainer{
+    /* background-image:url("../images/servicesBg1.svg"); */
+    width:100%;
+    background-position: center;
+    background-size: cover;
+    height:500px;
+}
+#services .container .top .text{
+    align-items: start;
+    position: absolute;
+    width: 30%;
+    height: 500px;
+    background-color: #004bad82;
+    color: white;
+    left: 0%;
+    top: 0%;
+    /* padding: 20px; */
+    padding: 0 15%;
+}
+#services .container .bottom .text{
+    position: absolute;
+    width: 30%;
+    height: 500px;
+    background-color: #004bad82;
+    color: white;
+    right: 0%;
+    top: 0%;
+    /* padding: 20px; */
+    padding: 0 15%;
+}
+#services .container .text p{
+    margin:20px 0;
+    font-size: 30px;
+}
+#services .icons{
+    margin:10px 0;
+}
+#services .icons p{
+    margin: 0 5px!important;
+}
+
+#services .container .bgContainer:hover {
+    transform: scale(1.07);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* #services .container .top:hover .text,#services .container .bottom:hover .text{
+    transform: scale();
+} */
+
+
+/* Apartments Section */
+
+#apartments{
+    padding:30px;
+}
+
+#apartments .container .imgs{
+    padding:30px 0;
+    align-items:start;
+   flex-wrap:wrap;
+   overflow:hidden;
+   border-radius:20px;
+}
+
+#apartments .container .top,#apartments .container .bottom,#apartments .container .centerContainer div{
+    overflow:hidden;
+    border-radius:20px;
+}
+
+
+#apartments .container .top,#apartments .container .bottom,#apartments .container .centerContainer img{
+    margin:10px;
+   
+}
+#apartments .container .top img,#apartments .container .bottom img{
+    height:450px;
+    /* margin:10px; */
+}
+#apartments .container .centerContainer img{
+    height:270px;
+    /* margin:10px; */
+}
+#apartments .container  img:hover{
+    transform:scale(1.15);
+    transition:transform 0.2s ease-in-out;
+}
+
+
+
+
+/* CSS Animations */
+
+@keyframes slideLeft{
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+@keyframes slideRight{
+    0%{
+        transform:translateX(100%);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+
+
+@keyframes changingBG {
+    0%{
+        /* opacity:0.8; */
+        background-image: url("../images/headerBg1.svg");
+    }
+    50%{
+        /* opacity:0.8; */
+        background-image: url("../images/headerBg2.svg");
+    }
+    100%{
+        background-image: url("../images/headerBg1.svg");
+
+    }
+
+}
+
+@keyframes slideRightIn{
+    0%{
+        transform: translateX(15%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideLeftIn{
+    0%{
+        transform: translateX(-15%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideDown{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes slideUp{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes slideLightDown{
+    0%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes heightChange{
+    0%{
+        height:0;
+    }
+    100%{
+        height:auto;
+    }
+}
+
+@keyframes changeOpacity{
+    0%{
+        opacity:0;
+    }
+    100%{
+    opacity:1;
+}
+
+}
+
+
+
+
+
+
+
+/* Tablet Sized Media Query */
+@media (min-width:768px) and (max-width:1024px){
+    #services .container .top .text p,#services .container .bottom .text p{
+        margin: 10px;
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+/* Mobile Size Media Queries */
+
+@media only screen and (max-width:768px){
+
+    
+
+    /* Header text */
+    #header #bgImg .top h1{
+        font-size:25px;
+    }
+    #header #bgImg .top h3{
+        font-size: 20px;
+    }
+    #quality .head {
+    width: 70%;
+    margin: 30px 0;
+}
+    #header #bgImg .bottom h6{
+        font-size:14px;
+        font-weight: 600;
+    }
+    #header #bgImg{
+        width:80%;
+    }
+
+
+    /* Qatar About */
+    #qatarAbout .container{
+        width:80%;
+    }
+    #qatarAbout .container img{
+        height:150px;
+    }
+
+#qatarAbout .container .text h3{
+    font-size: 20px;
+
+}
+#qatarAbout .container .text {
+    width:100%;
+}
+#qatarAbout .container{
+    flex-direction: column!important;
+}
+#qatarAbout .container .rectangle{
+    width:120px;
+    height:120px;
+}
+
+
+/* Countries */
+#countries .container.qatar{
+    flex-wrap: wrap;
+}
+#countries .container.qatar .top img{
+
+    height:200px;
+}
+#countries .container.qatar .bottom img{
+    height:110px;
+}
+#countries .container.mauritius .top,#countries .container.mauritius .bottom{
+    flex-direction: column;
+}
+#countries .container.mauritius img{
+
+    height:200px!important;
+}
+#countries .container.saudi .top,#countries .container.saudi .centerContainer,#countries .container.saudi .bottom{
+    flex-direction: column;
+}
+
+#countries .container.saudi img{
+    height:200px!important;
+}
+
+#countries .container .imgContainer .popup h3,#countries .container .imgContainer .popup p{
+    font-size:15px;
+    margin:5px 0;
+}
+#countries .container .imgContainer .popup p{
+    font-size:10px;
+    width: 90%;
+
+}
+
+
+/* Services Section */
+#services .container .top .text,#services .container .bottom .text{
+    width: 70%;
+}
+#services .container .top .text p,#services .container .bottom .text p{
+    margin: 10px;
+    font-size: 18px;
+}
+#services .icons{
+    margin:10px;
+}
+#services .container .top .text,#services .container .bottom .text{
+    padding:0 10%;
+}
+
+
+/* Apartments */
+#apartments .container {
+    flex-direction:column;
+}
+
+/* About */
+#about .container{
+    width:80%;
+}
+}
