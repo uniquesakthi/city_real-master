@@ -565,12 +565,13 @@ input[type=checkbox] {
     input[type=checkbox]:checked ~ .menu {
         display: block;
     }
-    input[type=checkbox]:checked ~ .hamburger-menu{
-        border:solid black 2px;
-        border-radius:4px;
-        background-color:#c4c1c16a;
-        transition:padding 0.1s linear;
-    }
+    input[type="checkbox"]:checked ~ .hamburger-menu {
+      border: 1px solid #6087ca;
+      border-radius: 4px;
+      color: #6087ca;
+      background-color: transparent;
+      transition: padding 0.1s linear 0s;
+  }
 
      .menu{
         /* animation:none; */

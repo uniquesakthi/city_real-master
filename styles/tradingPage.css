@@ -8,6 +8,24 @@ html {
 }
 
 
+.carousel-inners {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 800px;
+}
+
+.carousel-captions {
+    position: absolute;
+    right: 0%;
+    bottom: 13rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+
 #header {
     position: relative;
     overflow: hidden;
@@ -55,7 +73,8 @@ html {
     line-height: 70.1px;
     color: #fff;
     text-align: center;
-    padding: 1px 100px;
+    padding: 0rem 23rem;
+    margin: 30px 0px;
 }
 
 .slide-para {
@@ -66,7 +85,8 @@ html {
     font-size: 24px;
     font-weight: 700;
     line-height: 48.1px;
-    padding: 0px 35px;
+    padding: 0rem 16rem;
+    margin: 30px 0px;
 }
 
 
@@ -92,7 +112,7 @@ html {
     line-height: 1.2;
 } */
 
-#header button.m-detail {
+button.m-detail {
     color: #FFF;
     text-align: center;
     font-family: "Poppins, Medium";
@@ -105,7 +125,7 @@ html {
     border-radius: 2rem;
 }
 
-#header button.m-detail:hover {
+button.m-detail:hover {
     background-color: #ff3e41a0;
     color: rgba(255, 255, 255, 0.665);
     /* border:solid #FF3E41 2px; */
@@ -368,6 +388,7 @@ button.left-btn {
     border-radius: 5px;
     align-items: start;
     justify-content: space-evenly;
+    animation: slideRight 0.5s ease-in-out;
 }
 
 #features .bottom p {
@@ -405,14 +426,14 @@ ul.icon-link.icons {
 /* Quality Section Styles */
 
 #quality {
-    padding: 255px 0px;
+    padding: 14px 0px 270px 0px;
 }
 
 #quality .head h2 {
     margin: 20px;
     font-family: "Poppins, Medium";
-font-size: 36px;
-font-weight: 700;
+    font-size: 36px;
+    font-weight: 700;
 }
 
 #quality .head {
@@ -441,12 +462,12 @@ font-weight: 700;
     padding-top: 2rem;
 }
 
-.global-source{
+.global-source {
     color: #000;
     font-family: "Poppins, Medium";
-font-size: 48px;
-font-weight: 600;
-line-height: 54.6px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 54.6px;
 }
 
 #quality .head .text p {
@@ -482,6 +503,7 @@ line-height: 54.6px;
     padding: 0px;
     background: white;
     box-shadow: 2px 2px 15px #00000036;
+    animation: slideLeft 0.5s ease-in-out;
 }
 
 #quality .container .bottom.child {
@@ -492,7 +514,7 @@ line-height: 54.6px;
 
 #quality .container .bottom.child img {
     width: 807px;
-height: 757px;
+    height: 757px;
 }
 
 #quality .container .top.child .text p {
@@ -521,7 +543,7 @@ height: 757px;
     background-color: white;
     box-shadow: 2px 2px 15px #00000036;
     overflow: hidden;
-    margin: 20px 0;
+    margin: 20px 20px;
 }
 
 .services .card-body .card-img {
@@ -534,17 +556,44 @@ height: 757px;
 .services .card-body .card-img.card1 {
     background-image: url("../images/trading/cardImg1.svg");
     height: inherit;
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
 }
+
+.services .card-body .card-img.card1:hover {
+    background-image: url("../images/trading/cardImg1.svg");
+    transform: scale(1.1, 1.1);
+}
+
+
 
 .services .card-body .card-img.card2 {
     background-image: url("../images/trading/cardImg2.svg");
     height: inherit;
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
 }
+
+.services .card-body .card-img.card2:hover {
+    background-image: url("../images/trading/cardImg2.svg");
+    transform: scale(1.1, 1.1);
+}
+
+
 
 .services .card-body .card-img.card3 {
     background-image: url("../images/trading/cardImg3.svg");
     height: inherit;
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
 }
+
+.services .card-body .card-img.card3:hover {
+    background-image: url("../images/trading/cardImg3.svg");
+    transform: scale(1.1, 1.1);
+}
+
+
 
 .services .card-body .card-img {
     height: 300px;
@@ -642,17 +691,17 @@ img.footer-logo {
 }
 
 
-.order1{
+.order1 {
     order: 1;
 }
 
-.order2{
+.order2 {
     order: 2;
 }
 
-.social-media{
+.social-media {
     justify-content: end;
- }
+}
 
 
 
@@ -773,8 +822,12 @@ img.footer-logo {
     }
 
     #quality .head h1 {
+        text-align: center;
+        width: 100%;
+    }
 
-        width: 90%;
+    #quality .head p.supplier {
+        text-align: center;
     }
 
     /* Cards */
@@ -801,25 +854,27 @@ img.footer-logo {
     }
 
     .slide-para {
-        color: #FFF;
+        color: rgb(255, 255, 255);
         text-align: center;
-        text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+        text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 15px;
         font-family: "Poppins, Medium";
-        font-size: 24px;
+        font-size: 10px;
         font-weight: 700;
-        line-height: 34.1px;
-        padding: 0px 16px;
+        line-height: 18.1px;
+        padding: 0px 29px;
+        margin: 0px 0px;
     }
 
     .division {
-        text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.10);
+        text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
         font-family: "Poppins, Medium";
-        font-size: 64px;
+        font-size: 18px;
         font-weight: 800;
-        line-height: 59.1px;
-        color: #fff;
+        line-height: 24px;
+        color: rgb(255, 255, 255);
         text-align: center;
-        padding: 0px 10px;
+        padding: 1px;
+        margin: 0px 0px;
     }
 
     #header .slider {
@@ -912,6 +967,13 @@ img.footer-logo {
        justify-content: center;
     }
 
+    .copyright {
+        color: #000;
+        font-size: 13px;
+        font-weight: 400;
+        font-family: "Poppins, Medium";
+    }
+
     #features .bottom p {
         color: #FFF;
         font-family: "Poppins, Medium";
@@ -921,17 +983,40 @@ img.footer-logo {
         margin: -10px 64px;
     }
 
-    .rights {
-        display: flex;
-        margin: auto;
-        flex-direction: column;
-        padding-left: 0;
+    .about-heading {
+        font-family: "Poppins, Medium";
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 45.6px;
+        color: rgb(0, 0, 0);
     }
 
-    ul.icon-link.icons {
-        display: contents;
-        align-items: center;
-        flex-direction: row;
-        margin-left: auto;
+    .carousel-inners {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .carousel-captions {
+        position: absolute;
+        right: 0%;
+        bottom: 35px;
+        /* padding-top: 1.25rem; */
+        /* padding-bottom: 1.25rem; */
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    button.m-detail {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: "Poppins, Medium";
+        font-size: 10px;
+        font-weight: 800;
+        background-color: rgb(255, 62, 65);
+        width: 100px;
+        height: 25px;
+        border: none;
+        border-radius: 2rem;
     }
 }

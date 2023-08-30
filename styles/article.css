@@ -188,6 +188,18 @@ img.footer-logo {
 }
 
 
+.order1{
+    order: 1;
+}
+
+.order2{
+    order: 2;
+}
+
+.social-media{
+    justify-content: end;
+ }
+
 
 
 
@@ -256,5 +268,24 @@ img.footer-logo {
 
     .padding {
         padding: 1rem 2rem;
+    }
+
+    .order1{
+        order: 2;
+    }
+
+    .order2{
+        order: 1;
+    }
+
+    .social-media{
+       justify-content: center;
+    }
+
+    .copyright {
+        color: #000;
+        font-size: 13px;
+        font-weight: 400;
+        font-family: "Poppins, Medium";
     }
 }

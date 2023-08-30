@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Sky</title>
-
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
 
     <!-- StyleSheet -->
     <link rel="stylesheet" href="styles/landingPage.css" />
@@ -50,7 +50,7 @@
                 <!-- a tags and button -->
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="/">Real Estate</a></li>
+                    <li><a href="#about">Real Estate</a></li>
                     <li><a href="trading.html">Trading</a></li>
                     <li><a href="articles.html">Articles</a></li>
                     <li><a href="conatctUs.html"><button>Contact Us</button></a></li>
@@ -63,98 +63,67 @@
     <!-- Header Section -->
 
 
-    <div class="container-fluid">
-        <div class="row" id="header">
-            <div class="col">
-                <!-- Carousel -->
-                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-                    <!-- Indicators/dots -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                    </div>
-
-                    <!-- The slideshow/carousel -->
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div id="bgImg" class="carousel-captions">
-                                <div class="top">
-                                    <h3 class="noOpacity rightHead">CitySky</h3>
-                                    <h1 class="noOpacity rightHead">Real Estate & Trading</h1>
-                    
-                                </div>
-                                <div class="bottom mt-4">
-                                    <h6 class="noOpacity rightHead" id="leftHead">Join us in shaping your future - explore CitySky Real
-                                        Estate & Trading today and take a step towards new horizons!</h6>
-                    
-                                </div>
-                              </div>
-                          <img src="images/quatar.svg" alt="Los Angeles" class="d-block" style="width:100%">
-                          
-                        </div>
-                        <div class="carousel-item">
-                            <div id="bgImg" class="carousel-captions">
-                                <!-- <div class="top">
-                                    <h3 class="noOpacity rightHead">CitySky</h3>
-                                    <h1 class="noOpacity rightHead">Real Estate & Trading</h1>
-                    
-                                </div>
-                                <div class="bottom mt-4">
-                                    <h6 class="noOpacity rightHead" id="leftHead">Join us in shaping your future - explore CitySky Real
-                                        Estate & Trading today and take a step towards new horizons!</h6>
-                    
-                                </div> -->
-                              </div>
-                          <img src="images/headerBg1.svg" alt="Chicago" class="d-block" style="width:100%">
-                          
-                        </div>
-                        <div class="carousel-item">
-                            <!-- <div id="bgImg" class="carousel-captions">
-                                <div class="top">
-                                    <h3 class="noOpacity rightHead">CitySky</h3>
-                                    <h1 class="noOpacity rightHead">Real Estate & Trading</h1>
-                    
-                                </div>
-                                <div class="bottom mt-4">
-                                    <h6 class="noOpacity rightHead" id="leftHead">Join us in shaping your future - explore CitySky Real
-                                        Estate & Trading today and take a step towards new horizons!</h6>
-                    
-                                </div>
-                              </div> -->
-                          <img src="images/dubai.svg" alt="New York" class="d-block" style="width:100%">
-                
-                        </div>
-                      </div>
-
-                    <!-- Left and right controls/icons -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-
-            </div>
-
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
         </div>
 
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inners">
+            <div class="carousel-item active">
+                <img src="images/qatar.svg" alt="Los Angeles" class="d-block" style="width:100%">
+                <div class="carousel-captions">
+                    <h3 class="caption-head">CitySky</h3>
+                    <h1 class="slide-head">Real Estate & Trading</h1>
+                    <h6 class="slide-para" id="leftHead">Join us in shaping your future - explore CitySky Real
+                        Estate & Trading today and take a step towards new horizons!</h6>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/dubai.svg" alt="Chicago" class="d-block" style="width:100%">
+                <div class="carousel-captions">
+                    <h3 class="caption-head">CitySky</h3>
+                    <h1 class="slide-head">Real Estate & Trading</h1>
+                    <h6 class="slide-para" id="leftHead">Join us in shaping your future - explore CitySky Real
+                        Estate & Trading today and take a step towards new horizons!</h6>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/Mauritius.svg" alt="New York" class="d-block" style="width:100%">
+                <div class="carousel-captions">
+                    <h3 class="caption-head">CitySky</h3>
+                    <h1 class="slide-head">Real Estate & Trading</h1>
+                    <h6 class="slide-para" id="leftHead">Join us in shaping your future - explore CitySky Real
+                        Estate & Trading today and take a step towards new horizons!</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
+
 
 
     <!-- <section id="header" class="center-row element">
 
         <div id="bgImg" class="center-col">
             <div class="top">
-                <h3 class="noOpacity rightHead">CitySky</h3>
-                <h1 class="noOpacity rightHead">Real Estate & Trading</h1>
+                <h3 class="noOpacity rightHead" style="color: black;">CitySky</h3>
+                <h1 class="noOpacity rightHead"  style="color: black;">Real Estate & Trading</h1>
 
             </div>
             <div class="bottom">
-                <h6 class="noOpacity rightHead" id="leftHead">Join us in shaping your future - explore CitySky Real
+                <h6 class="noOpacity rightHead" id="leftHead"  style="color: black;">Join us in shaping your future - explore CitySky Real
                     Estate & Trading today and take a step towards new horizons!</h6>
 
             </div>
@@ -414,25 +383,6 @@
                 <img class="footer-logo mt-4 mb-2" src="images/footer-logo.svg" alt="footer">
                 <hr style="background: #A2A2A2; height: 2px;">
                 <div class="row">
-                    <!-- <div class="col-md-4 about-us mt-3 mb-3">
-                        <h4 class="footer-us"> About Us</h4>
-                        <p class="footer-para">Heaven fruitful doesn't over lesser days appear creeping seasons so
-                            behold bearing days open</p>
-                        <div class="row">
-                            <div class="col">
-                                <img src="icons/fbIcon.svg" alt="Facebook Icon" />
-                            </div>
-                            <div class="col">
-                                <img src="icons/twitterIcon.svg" alt="Twitter Icon" />
-                            </div>
-                            <div class="col">
-                                <img src="icons/linkedInIcon.svg" alt="LinkedIn Icon" />
-                            </div>
-                            <div class="col">
-                                <img src="icons/youtubeIcon.svg" alt="Youtube Icon" />
-                            </div>
-                        </div>
-                    </div> -->
                     <div class="col-md-4 contact-us mt-3 mb-3">
                         <h4 class="footer-us">Contact Us</h4>
                         <div class="row align-items-baseline">
@@ -440,8 +390,7 @@
                                 <img src="icons/locationIcon.svg" alt="Location Icon" />
                             </div>
                             <div class="col-10">
-                                <p class="footer-para">Tornado Tower, Floor 22,
-                                    Westbau, Doha, Qatar.</p>
+                                <p class="footer-para">Tornado Tower, Level 22, West bay, Doha, Qatar.</p>
                             </div>
                         </div>
                         <div class="row align-items-baseline">
@@ -497,25 +446,3 @@
 <script src="index.js" rel="text/javascript"></script>
 
 </html>
-
-
-
-<!-- Welcome to CitySky real estate investment company! We are thrilled to offer you a comprehensive suite of services that cater to all your investment needs. As a leading player in this industry, we pride ourselves on delivering exceptional results that exceed our clients' expectations. -->
-
-
-<!-- If you are looking to invest in real estate, we offer a range of investment options that are designed to meet your unique needs. We specialize in both commercial and residential properties and have a robust portfolio of properties that offer high returns on investment. Our team of experts will work closely with you to identify the best investment opportunities that align with your investment goals. -->
-
-
-<!-- <div class="center-row icons">
-   
-            <img src="icons/priceIcon.svg" alt="Price Icon"/>
-            <p class="txt-center">Best Price</p>
-      
-            <img src="icons/highReturnIcon.svg" alt="Price Icon"/>
-            <p class="txt-center">High Security</p>
-       
-            
-            <img src="icons/secureIcon.svg" alt="Price Icon"/>
-            <p class="txt-center">100% Secure</p>
-       
-    </div> -->
