@@ -10,10 +10,14 @@ html {
     text-align: center;
 }
 
+.text-align-end{
+    text-align: end;
+}
+
 .contactus-bg {
     background-image: url("../images/contactUs.svg");
     width: 100%;
-    height: 442px;
+    height: 300px;
     background-position: center;
     background-size: cover;
 }
@@ -24,7 +28,7 @@ h4.c-title {
     font-family: "Poppins, Medium";
     font-size: 64px;
     font-weight: 800;
-    padding: 12rem 0px;
+    padding: 7rem 0px;
 }
 
 
@@ -99,8 +103,8 @@ h4.c-title {
 /* FOOTER */
 
 img.footer-logo {
-    /* width: 100%; */
-    height: 189px;
+    width: 35%;
+    height: 125px;
 }
 
 .footer-bg {
