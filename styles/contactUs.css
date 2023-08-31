@@ -128,10 +128,14 @@ img.footer-logo {
     color: #000;
     font-size: 18px;
     font-weight: 400;
-    line-height: 36.1px;
+    line-height: 28.1px;
     font-family: "Poppins, Medium";
+    margin: 4px;
 }
 
+.f-rights{
+    text-align: end;
+}
 
 .col-md-4.about-us {
     padding: 0px 60px;
@@ -207,5 +211,9 @@ img.footer-logo {
         font-size: 13px;
         font-weight: 400;
         font-family: "Poppins, Medium";
+    }
+
+    .f-rights{
+        text-align: center;
     }
 }

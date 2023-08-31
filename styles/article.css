@@ -26,8 +26,8 @@ html {
 }
 
 .article-bg:hover{
-    transform: scale(1.07);
-    transition: transform 0.2s ease-in-out;
+    width: 100%;
+    height: 485px;
   }
 
   .cards:hover{
@@ -74,13 +74,12 @@ img.dubai-img {
     transition: transform 0.5s ease;
 }
   
-  img.dubai-img:hover{
-    transform: scale(1.1, 1.1);
-  }
+ 
   
 
 .cards {
     width: 350px;
+    height: 425px;
     box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.10);
     position: relative;
     display: flex;
@@ -91,7 +90,13 @@ img.dubai-img {
     background-clip: border-box;
     border: none;
     border-radius: 20px 20px 0px 0px;
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
 }
+
+.cards:hover{
+    transform: scale(1.1, 1.1);
+  }
 
 .country {
     color: #004AAD;
@@ -110,7 +115,7 @@ img.dubai-img {
     font-family: "Poppins, Medium";
     font-size: 14px;
     font-weight: 600;
-    padding: 0px 51px 0px 10px;
+    padding: 0px 47px 0px 15px;
     line-height: 20.5px;
 }
 
@@ -119,7 +124,7 @@ img.dubai-img {
     font-family: "Poppins, Medium";
     font-size: 12px;
     font-weight: 400;
-    padding: 0px 8px 3px 10px;
+    padding: 0px 7px 0px 15px;
     text-align: initial;
     line-height: 18.5px;
 }
@@ -159,10 +164,14 @@ img.footer-logo {
     color: #000;
     font-size: 18px;
     font-weight: 400;
-    line-height: 36.1px;
+    line-height: 28.1px;
     font-family: "Poppins, Medium";
+    margin: 4px;
 }
 
+.f-rights{
+    text-align: end;
+}
 
 .col-md-4.about-us {
     padding: 0px 60px;
@@ -291,5 +300,9 @@ img.footer-logo {
         font-size: 13px;
         font-weight: 400;
         font-family: "Poppins, Medium";
+    }
+
+    .f-rights{
+        text-align: center;
     }
 }
